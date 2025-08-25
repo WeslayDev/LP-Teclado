@@ -5,7 +5,6 @@ comprarBtns.forEach(btn => {
         window.location.href = "checkout.html";
     });
 });
-// FAQ Toggle
 const faqButtons = document.querySelectorAll('.faq-btn');
 
 faqButtons.forEach(btn => {

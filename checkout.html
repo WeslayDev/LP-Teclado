@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Teclado Mecânico</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Finalize sua compra</h1>
+        <p>Preencha os dados abaixo para concluir o pedido</p>
+    </header>
+
+    <main>
+        <form id="checkoutForm">
+            <fieldset>
+                <legend>Informações do Cliente</legend>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço de Entrega</legend>
+                <label for="rua">Rua</label>
+                <input type="text" id="rua" name="rua" required>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required>
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado" required>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pagamento</legend>
+                <label for="cartao">Número do Cartão</label>
+                <input type="text" id="cartao" name="cartao" placeholder="0000-0000-0000-0000" required>
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" name="validade" placeholder="MM/AA" required>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" required>
+                <label for="parcelas">Parcelas</label>
+                <select id="parcelas" name="parcelas">
+                    <option value="1">1x sem juros</option>
+                    <option value="2">2x sem juros</option>
+                    <option value="3">3x sem juros</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Teclado Mecânico Premium. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
